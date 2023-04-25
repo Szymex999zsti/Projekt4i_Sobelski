@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formularz praktyk</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="new.js"></script>
+</head>
+<body>
+  <div class="container">
+
+    <h1>Formularz praktyk</h1>
+    <section id="header">
+        <section id="parts">
+            <button class="nav-buttons" id="uczen-button">UCZEN</button>
+            <button class="nav-buttons" id="dziennik-button">DZIENNIK</button>
+            <button class="nav-buttons" id="podsumowanie-button">PODSUMOWANIE</button>
+        </section>
+    </section>
+
+    <form id="praktykiForm">
+      <table>
+        <tr>
+          <td class="label-cell"><label for="dataPraktyk">Data praktyk:</label></td>
+          <td><input type="date" id="dataPraktyk" name="dataPraktyk" required></td>
+        </tr>
+        <tr>
+          <td class="label-cell"><label for="dzialPraktyk">Dzial praktyk:</label></td>
+          <td>
+            <select id="dzialPraktyk" name="dzialPraktyk" required>
+              <option value="">Wybierz Dzial</option>
+              <option value="helpdesk">Helpdesk</option>
+              <option value="programowanie">Programowanie</option>
+              <option value="sieci">Sieci</option>
+              <option value="baz_danych">Bazy danych</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="label-cell"><label for="opisDnia">Opis dnia:</label></td>
+          <td><textarea id="opisDnia" name="opisDnia" rows="4" cols="50"></textarea></td>
+        </tr>
+      </table>
+      <div class="center"><input type="submit" value="Zatwierdz"></div>
+      
+    </form>
+
+    <h2>Dane praktyk:</h2>
+    <div id="danePraktyk"></div>
+  </div>
+
+
+
+  <script src="scriptpraktyka.js"></script>
+</body>
+</html>

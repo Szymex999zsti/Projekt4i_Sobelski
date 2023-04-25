@@ -1,0 +1,39 @@
+body {
+    background-color: #f2e7dc;
+    color: #F27405;
+}
+
+.nav-buttons {
+    background-color: #F2B279;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+.nav-buttons:hover {
+    color: #333;
+    cursor: pointer;
+}
+
+#header > h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+#parts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+ .all {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+ }
+
+ .h2 {
+    display: flex;
+    justify-content: center;
+ }

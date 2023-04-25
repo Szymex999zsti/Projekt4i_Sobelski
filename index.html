@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylepraktyka.css">
+    <title>Pratyka zawodowa</title>
+</head>
+<body>
+    
+    <section id="header">
+
+        <h1>Dzienniczek Praktyk</h1>
+
+        <section id="parts">
+            <button class="nav-buttons" id="uczen-button">UCZEŃ</button>
+            <button class="nav-buttons" id="dziennik-button">DZIENNIK</button>
+            <button class="nav-buttons" id="podsumowanie-button">PODSUMOWANIE</button>
+        </section>
+
+    </section>
+    <section class="all">
+    <section id="forms">
+
+    <section id="personal-form">
+
+        <h2>Dane Ucznia</h2>
+
+        <div class="personal-form-container">
+
+            <div class="personal-form-top">
+
+                <div class="form-input-box">
+                    <label for="name">Imię:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                
+                <div class="form-input-box">
+                    <label for="surname">Nazwisko:</label>
+                    <input type="text" name="surname" id="surname">
+                </div>
+            </div>
+
+            <div class="personal-form-mid">
+
+                <div class="form-input-box">
+                    <label for="class">Klasa:</label>
+                    <input type="text" name="class" id="class">
+                </div>
+
+                <div class="form-input-box">
+                    <label for="year">Rok:</label>
+                    <input type="number" name="year" id="year" min="2020" max="2024">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="company-form">
+
+        <h2>Praktyka</h2>
+
+        <div class="company-form-container">
+
+            <div class="company-form-top">
+
+                <div class="form-input-box">
+                    <label for="company">Firma:</label>
+                    <input type="text" name="company" id="company">
+                </div>
+
+            </div>
+
+            <div class="company-form-mid">
+
+                <div class="form-input-box">
+                    <label for="start">Początek:</label>
+                    <input type="date" name="start" id="start">
+                </div>
+
+                <div class="form-input-box">
+                    <label for="finish">Zakończenie:</label>
+                    <input type="date" name="finish" id="finish">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="submit">
+
+        <button onclick="showSummary()" class="submit-buttons">Zatwierdź</button>
+
+    </section>
+
+    </section>
+
+    <section id="summary">
+
+        <div class="summary-container">
+
+            <h2>Dane Ucznia</h2>
+
+            <div class="namesSummary"></div>
+            <div class="schoolSummary"></div>
+            <div class="companySummary"></div>
+            <div class="dateSummary"></div>
+
+        </div>
+
+    </section>
+
+</section>
+
+    <script src="scriptpraktyka.js"></script>
+
+</body>
+</html>

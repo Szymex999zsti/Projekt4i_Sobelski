@@ -1,0 +1,69 @@
+body {
+  background-color: #f2e7dc;
+  color: #F27405;
+}
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    text-align: center;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  td {
+    padding: 5px;
+  }
+  
+  .label-cell {
+    width: 30%;
+  }
+  
+  input[type="date"], select {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #F2B279;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  }
+
+  #parts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+.nav-buttons {
+  background-color: #F2B279;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+}
+
+.nav-buttons:hover {
+  color: #333;
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}

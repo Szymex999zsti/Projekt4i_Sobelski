@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formularz z ocenami z zajęć informatycznych</title>
+  <link rel="stylesheet" href="plik.css">
+</head>
+<body>
+  <section id="header">
+
+
+    <section id="parts">
+        <button class="nav-buttons" id="uczen-button">UCZEN</button>
+        <button class="nav-buttons" id="dziennik-button">DZIENNIK</button>
+        <button class="nav-buttons" id="podsumowanie-button">PODSUMOWANIE</button>
+    </section>
+
+</section>
+<section class="all">
+  <form id="ocenyForm" onsubmit="submitForm()">
+    <label for="temat">Temat zajec:</label>
+    <input type="text" id="temat" name="temat" required><br><br>
+    <label for="rodzaj">Rodzaj zajec:</label>
+    <select id="rodzaj" name="rodzaj" required>
+      <option value="helpdesk">Helpdesk</option>
+      <option value="programowanie">Programowanie</option>
+      <option value="sieci">Sieci</option>
+      <option value="bazy danych">Bazy danych</option>
+    </select><br><br>
+    <label for="opiekun">Opiekun:</label>
+    <select id="opiekun" name="opiekun" required>
+      <option value="Mariusz Chlebak">Mariusz Chlebak</option>
+      <option value="Konrad Bibułka">Konrad Bibulka</option>
+    </select><br><br>
+    <label for="ocena">Ocena:</label>
+    <input type="number" id="ocena" name="ocena" min="1" max="5" required><br><br>
+    <input type="submit" value="Zatwierdz">
+  </form>
+</section>
+  <h2>Zapisane oceny:</h2>
+  <div id="zapisaneOceny"></div>
+
+  <script>
+    function submitForm() {
+      event.preventDefault();
+      var temat = document.getElementById("temat").value;
+      var rodzaj = document.getElementById("rodzaj").value;
+      var opiekun = document.getElementById("opiekun").value;
+      var ocena = document.getElementById("ocena").value;
+
+      var wiadomosc = "Temat zajec: " + temat + "<br>" +
+                      "Rodzaj zajec: " + rodzaj + "<br>" +
+                      "Opiekun: " + opiekun + "<br>" +
+                      "Ocena: " + ocena;
+
+      var zapisaneOceny = document.getElementById("zapisaneOceny");
+      var nowaOcena = document.createElement("p");
+      nowaOcena.innerHTML = wiadomosc;
+      zapisaneOceny.appendChild(nowaOcena);
+
+      document.getElementById("temat").value = "";
+      document.getElementById("ocena").value = "";
+    }
+  </script>
+
+<script src="scriptpraktyka.js"></script>
+</body>
+</html>
+
